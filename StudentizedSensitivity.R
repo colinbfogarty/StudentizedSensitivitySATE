@@ -26,7 +26,7 @@
 #' #Reading in Data
 #' data <- read.csv(file="/data/maffei.csv")
 #' treatment <- data$Treatment
-#' PairedDiff <- data$CNPlus
+#' PairedDiff <- data$CNPlus[1:20]-data$CNPlus[21:40]
 #' #Function call
 #' StudentizedSensitivity(PairedDiff, null = 0, alpha = 0.05, alternative = "greater", Gamma = 1, nperm = 50000, Changepoint = T, SensitivityInterval = T)
 #' @export
